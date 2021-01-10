@@ -3,6 +3,6 @@ import {Header} from '../components/Header.tsx'
 
 export default function Home() {
   return (
-    <Layout><div>ss</div></Layout>
+    <Layout header_layout={true}><div>ss</div></Layout>
   )
 }

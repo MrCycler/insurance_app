@@ -10,9 +10,10 @@ const Item = (props) => {
   );
 };
 
-export const Header = () => {
+export const Header = (props) => {
   return (
     <div className="header">
+    <div className="header__container">
       <p className="header__title">
         Seguro de <br />
         <b>Salud</b>
@@ -20,8 +21,8 @@ export const Header = () => {
       <Item src_icon="/images/gl_mobile-20x20.png">Cómpralo de manera fácil y rápida</Item>
       <Item src_icon="/images/gl_shield-20x20.png">Cotiza y compra tu seguro 100% digital</Item>
       <Item src_icon="/images/gl_mobile-20x20.png">Hasta S/.12 millones de cobertura anual</Item>
-      <Item src_icon="/images/gl_shield-20x20.png">Más de 300 clínicas en todo el Perú</Item>
-      <p className="header__copyrigth">2020 RIMAC Seguros y Reaseguros</p>
+      <Item src_icon="/images/gl_shield-20x20.png">Más de 300 clínicas en todo el Perú</Item></div>
+      <div className="header__copyrigth">© 2020 RIMAC Seguros y Reaseguros</div>
     </div>
   );
 };

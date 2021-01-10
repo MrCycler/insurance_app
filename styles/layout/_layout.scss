@@ -1,4 +1,10 @@
-.layout{
+.layout {
+  &__principal {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+  }
+  &__secondary {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
