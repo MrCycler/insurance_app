@@ -7,6 +7,7 @@ import { Input } from "./Input.tsx";
 import { Button } from "./Button.tsx";
 import { PolicyCheck } from "./PolicyCheck.tsx";
 import { DateInput } from "./DateInput.tsx";
+import { IDInput } from "./IDInput.tsx";
 
 export const BasicForm = (props) => {
   //use router
@@ -49,7 +50,7 @@ export const BasicForm = (props) => {
         <p className="form__title__active">seguro ahora</p>
       </div>
       <p className="form__subtitle">Ingresa los datos para comenzar</p>
-      <Input
+      <IDInput
         label="Nro de documento"
         type="tel"
         setValue={setdocumentNro}

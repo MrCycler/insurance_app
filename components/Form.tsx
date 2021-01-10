@@ -2,12 +2,12 @@ import React, { useState, useEffect } from "react";
 import "../styles/app.scss";
 
 //moment for datetime
-import moment from "moment";
+import moment from 'moment';
 import { serverDateFormat } from "../util/dateFormat.tsx";
 
 //Form components
 import { Input } from "./Input.tsx";
-import { DateInput } from "./DateInput.tsx";
+import { DateInput} from "./DateInput.tsx";
 
 //Basic provider
 import { postClient } from "../api/clientProvider.tsx";
@@ -68,7 +68,10 @@ export const Form = (props) => {
         value={motherLastName}
         setValue={setMotherLastName}
       />
-      <DateInput value={date} setValue={setDate} />
+      <DateInput
+        value={date}
+        setValue={setDate}
+      />
     </div>
   );
 };
