@@ -1,8 +1,13 @@
 import React, { useState, useEffect } from "react";
 import "../styles/app.scss";
 
+//moment for datetime
+import moment from "moment";
+import { serverDateFormat } from "../util/dateFormat.tsx";
+
 //Form components
 import { Input } from "./Input.tsx";
+import { DateInput } from "./DateInput.tsx";
 
 //Basic provider
 import { postClient } from "../api/clientProvider.tsx";
@@ -29,7 +34,7 @@ export const Form = (props) => {
       setName(_client.tercero.nombres);
       setLastName(_client.tercero.apellidoPaterno);
       setMotherLastName(_client.tercero.apellidoMaterno);
-      setDate(_client.tercero.fecNacimiento);
+      setDate(moment(_client.tercero.fecNacimiento).format(serverDateFormat));
     };
 
     initialize();
@@ -63,12 +68,7 @@ export const Form = (props) => {
         value={motherLastName}
         setValue={setMotherLastName}
       />
-      <Input
-        label="Fecha de nacimiento"
-        type="text"
-        value={date}
-        setValue={setDate}
-      />
+      <DateInput value={date} setValue={setDate} />
     </div>
   );
 };
