@@ -1,8 +1,8 @@
 import {Layout} from '../components/layout/Layout.tsx'
-import {Header} from '../components/Header.tsx'
+import {BasicForm} from '../components/BasicForm.tsx'
 
 export default function Home() {
   return (
-    <Layout header_layout={true}><div>ss</div></Layout>
+    <Layout header_layout={true}><BasicForm/></Layout>
   )
 }
