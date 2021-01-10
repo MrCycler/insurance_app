@@ -1,4 +1,9 @@
+//base style of app
 @import 'base/base';
+
+//layout style
 @import 'layout/header';
-@import 'layout/form';
 @import 'layout/layout';
+
+//form style
+@import 'form/form';

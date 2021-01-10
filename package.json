@@ -9,6 +9,7 @@
   },
   "dependencies": {
     "@zeit/next-sass": "^1.0.1",
+    "lodash": "^4.17.20",
     "next": "^10.0.0",
     "node-sass": "^5.0.0",
     "react": "16.13.1",

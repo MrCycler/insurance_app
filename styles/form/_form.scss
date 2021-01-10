@@ -1,8 +1,50 @@
+// Google Fonts
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;300&display=swap");
+
+//aplication color
+$app-skyblue: #2f80ed;
+$app-white: #ffffff;
+$app-green: #83CC5E;
+$copyright-gray: #a8afe3;
+//aplication fonts
+$form-title-font-size: 30px;
+$form-subtitle-font-size: 20px;
+$app-font-family: "Lato", sans-serif;
+
+.form{
+  padding-left: 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+    &__title{
+      font-size: $form-title-font-size;
+      font-family: $app-font-family;
+      margin-bottom: 2%;
+      display: flex;
+      &__active{
+        font-size: $form-title-font-size;
+        font-family: $app-font-family;
+        font-weight: bold;
+        color:$app-skyblue;
+        margin-bottom: 2%;
+      }
+    }
+    
+    &__subtitle{
+      font-size: $form-subtitle-font-size;
+      font-family: $app-font-family;
+      margin-bottom: 2%;
+    }
+}
+
+
 .input {
   display: flex;
   flex-direction: column;
-  min-width: 350px;
+  width: 80%;
   position: relative;
+  margin-top: 20px;
+
   &__label {
     font-size: 16px;
     font-family: Arial, Helvetica, sans-serif;
@@ -50,3 +92,5 @@
     }
   }
 }
+
+
