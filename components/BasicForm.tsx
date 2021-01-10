@@ -1,15 +1,25 @@
 import React, { useState, useEffect } from "react";
 import "../styles/app.scss";
+import { useRouter } from 'next/router'
 
 //Basic Form components
 import { Input } from "./Input.tsx";
 import { Button } from "./Button.tsx";
+import { PolicyCheck } from "./PolicyCheck.tsx";
 
 export const BasicForm = (props) => {
+
+  //use router
+  const router = useRouter()
+
   const [documentType, setdocumentType] = useState("");
   const [documentNro, setdocumentNro] = useState("");
   const [date, setDate] = useState("");
   const [phoneNumber, setPhoneNumber] = useState("");
+  // policys aceptadas
+  const [personalPolicy, setPersonalPolicy] = useState(false);
+  const [comPolicy, setComPolicy] = useState(false);
+  //boton activado
   const [active, setActive] = useState(false);
 
   useEffect(() => {
@@ -17,6 +27,11 @@ export const BasicForm = (props) => {
       setActive(true);
     }
   }, [documentType, documentNro, date, phoneNumber]);
+
+  const handleClick = (e) => {
+    e.preventDefault()
+    router.push("/step1")
+  }
 
   return (
     <div className="form">
@@ -46,7 +61,9 @@ export const BasicForm = (props) => {
         value={phoneNumber}
         maxLength="9"
       />
-      <Button msg="COMENCEMOS" active={active} />
+      <PolicyCheck >Acepto la Politica de Protección de Datos Personales y los Términos y Condiciones</PolicyCheck>
+      <PolicyCheck >Acepto la Politica de Envio de Comunicaciones Comerciales</PolicyCheck>
+      <Button msg="COMENCEMOS" active={active} onClick={handleClick}/>
     </div>
   );
 };

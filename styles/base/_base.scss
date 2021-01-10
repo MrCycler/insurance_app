@@ -29,3 +29,9 @@ input::-webkit-inner-spin-button {
 input[type="number"] {
   -moz-appearance: textfield;
 }
+
+
+input[type=checkbox]:checked {
+  background: #a77e2d !important;
+  color: #ffffff !important;
+}
