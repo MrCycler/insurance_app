@@ -22,7 +22,7 @@ export const Form = (props) => {
     <div className="form">
       <div className="form__title">
         <p>Hola,&nbsp;</p>
-        <p className="form__title__active">{client.tercero.nombres}</p>
+        <p className="form__title__active">{}</p>
       </div>
       <p className="form__subtitle">Valida que los datos sean correctos</p>
       <Input label="Nro de documento" type="number" />
