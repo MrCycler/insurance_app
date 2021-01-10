@@ -50,6 +50,9 @@ $app-font-family: "Lato", sans-serif;
     font-family: $app-font-family;
     color: $copyright-gray;
   }
+  @media (max-width:1000px){
+    display: none;
+  }
 }
 
 .header_termination {
@@ -68,5 +71,8 @@ $app-font-family: "Lato", sans-serif;
     position: absolute;
     top: 0;
     z-index: -1;
+  }
+  @media (max-width:700px){
+    display: none;
   }
 }
