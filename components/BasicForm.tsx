@@ -6,6 +6,7 @@ import { useRouter } from 'next/router'
 import { Input } from "./Input.tsx";
 import { Button } from "./Button.tsx";
 import { PolicyCheck } from "./PolicyCheck.tsx";
+import { DateInput} from "./DateInput.tsx";
 
 export const BasicForm = (props) => {
 
@@ -47,13 +48,7 @@ export const BasicForm = (props) => {
         value={documentNro}
         maxLength="8"
       />
-      <Input
-        label="Fecha de nacimiento"
-        type="text"
-        setValue={setDate}
-        value={date}
-        maxLength="14"
-      />
+      
       <Input
         label="Celular"
         type="tel"
@@ -61,6 +56,7 @@ export const BasicForm = (props) => {
         value={phoneNumber}
         maxLength="9"
       />
+      <DateInput />
       <PolicyCheck >Acepto la Politica de Protección de Datos Personales y los Términos y Condiciones</PolicyCheck>
       <PolicyCheck >Acepto la Politica de Envio de Comunicaciones Comerciales</PolicyCheck>
       <Button msg="COMENCEMOS" active={active} onClick={handleClick}/>
