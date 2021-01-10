@@ -4,39 +4,72 @@
 //aplication color
 $app-skyblue: #2f80ed;
 $app-white: #ffffff;
-$app-green: #83CC5E;
-$copyright-gray: #a8afe3;
+$app-green: #83cc5e;
+$app-gray: #a8afe3;
 //aplication fonts
 $form-title-font-size: 30px;
 $form-subtitle-font-size: 20px;
+$button-font-size: 13px;
 $app-font-family: "Lato", sans-serif;
 
-.form{
+.form {
   padding-left: 10%;
   display: flex;
   flex-direction: column;
   justify-content: center;
-    &__title{
+  &__title {
+    font-size: $form-title-font-size;
+    font-family: $app-font-family;
+    margin-bottom: 2%;
+    display: flex;
+    &__active {
       font-size: $form-title-font-size;
       font-family: $app-font-family;
-      margin-bottom: 2%;
-      display: flex;
-      &__active{
-        font-size: $form-title-font-size;
-        font-family: $app-font-family;
-        font-weight: bold;
-        color:$app-skyblue;
-        margin-bottom: 2%;
-      }
-    }
-    
-    &__subtitle{
-      font-size: $form-subtitle-font-size;
-      font-family: $app-font-family;
+      font-weight: bold;
+      color: $app-skyblue;
       margin-bottom: 2%;
     }
+  }
+
+  &__subtitle {
+    font-size: $form-subtitle-font-size;
+    font-family: $app-font-family;
+    margin-bottom: 2%;
+  }
 }
 
+.button {
+  background-color: $app-skyblue;
+  color: $app-gray;
+  width: fit-content;
+  margin-top: 20%;
+  padding-top: 3%;
+  padding-bottom: 3%;
+  padding-right: 5%;
+  padding-left: 5%;
+  border: $app-skyblue 1px solid;
+  border-radius: 5px;
+  font-size: $button-font-size;
+  font-family: $app-font-family;
+  font-weight: bold;
+  cursor: pointer;
+  &__active {
+    background-color: $app-skyblue;
+    color: $app-white;
+    width: fit-content;
+    margin-top: 20%;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    padding-right: 5%;
+    padding-left: 5%;
+    border: $app-skyblue 1px solid;
+    border-radius: 5px;
+    font-size: $button-font-size;
+    font-family: $app-font-family;
+    font-weight: bold;
+    cursor: pointer;
+  }
+}
 
 .input {
   display: flex;
@@ -92,5 +125,3 @@ $app-font-family: "Lato", sans-serif;
     }
   }
 }
-
-

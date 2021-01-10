@@ -1,8 +1,12 @@
 import React, { useState, useEffect } from "react";
 import "../styles/app.scss";
 
+//Form components
 import { Input } from "./Input.tsx";
+
+//Basic provider
 import { postClient } from "../api/clientProvider.tsx";
+
 
 export const Form = (props) => {
   const [client, setClient] = useState({});
