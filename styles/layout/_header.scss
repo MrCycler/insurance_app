@@ -1,0 +1,50 @@
+// Google Fonts
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300&display=swap');
+
+//aplication color
+$app-skyblue :#2f80ed;
+$app-white : #ffffff;
+//aplication fonts
+$title-font-size: 50px;
+$item-font-size: 18px;
+$app-font-family:'Lato', sans-serif;
+
+.header {
+  background-color: $app-skyblue;
+  height: 100vh;
+  padding-left: 25%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  &__title {
+    font-size: $title-font-size;
+    font-family: $app-font-family;
+    color:$app-white;
+    margin-bottom: 10%;
+  }
+  &__item {
+    font-size: $item-font-size;
+    font-weight: 100;
+    font-family: $app-font-family;
+    color:$app-white;
+    margin-bottom: 5%;
+    display: flex;
+  }
+  &__icon {
+    height: 20px;
+    width: 20px;
+    margin-right:10px;
+  }
+  &__copyrigth {
+    font-size: 12px;
+    align-self: flex-end;
+    margin-bottom: 0;
+  }
+  &__watermark {
+    height: 10px;
+    width: 10px;
+  }
+  &__termination{
+      height: 100vh;
+  }
+}
