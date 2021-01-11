@@ -44,10 +44,24 @@ $app-font-family: "Lato", sans-serif;
     margin-top: 40px;
     font-family: $app-font-family;
     font-size: $indication-font-size;
+    border-bottom: 1px solid #dddd;
+    padding-bottom: 30px;
     b {
       font-size: $indication-font-size;
       font-family: $app-font-family;
       color: $app-skyblue;
+    }
+  }
+
+  &__dropdown {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #dddd;
+    svg {
+      color: $app-skyblue;
+      cursor: pointer;
     }
   }
 }
@@ -177,7 +191,8 @@ $app-font-family: "Lato", sans-serif;
   background-color: $app-skyblue;
   color: $app-gray;
   width: fit-content;
-  margin-top: 20%;
+  margin-top: 60px;
+  margin-bottom: 20px;
   padding-top: 15px;
   padding-bottom: 15px;
   padding-right: 30px;
@@ -188,11 +203,12 @@ $app-font-family: "Lato", sans-serif;
   font-family: $app-font-family;
   font-weight: bold;
   cursor: pointer;
+
   &__active {
     background-color: $app-skyblue;
     color: $app-white;
     width: fit-content;
-    margin-top: 20%;
+    margin-top: 60px;
     padding-top: 15px;
     padding-bottom: 15px;
     padding-right: 30px;
@@ -203,5 +219,6 @@ $app-font-family: "Lato", sans-serif;
     font-family: $app-font-family;
     font-weight: bold;
     cursor: pointer;
+    margin-bottom: 20px;
   }
 }

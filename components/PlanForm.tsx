@@ -6,6 +6,7 @@ import { useRouter } from "next/router";
 
 //Form components
 import { Button } from "./Button.tsx";
+import { DropDown } from "./DropDown.tsx";
 import { PlanCardSet } from "./PlanCardSet.tsx";
 import { PlanBanner } from "./PlanBanner.tsx";
 import { StepIndicator } from "./layout/StepIndicator.tsx";
@@ -61,6 +62,8 @@ export const PlanForm = (props) => {
         <br />
         <b>servicios y exclusiones</b>
       </p>
+      <DropDown title="Servicios brindados" />
+      <DropDown title="Exclusiones" />
       <Button msg="COMPRAR PLAN" active={true} onClick={handleClick} />
     </div>
   );
