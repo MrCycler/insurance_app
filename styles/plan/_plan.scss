@@ -1,0 +1,59 @@
+//aplication colors
+$app-skyblue: #2f80ed;
+$app-white: #ffffff;
+$app-green: #83cc5e;
+$app-gray: #a8afe3;
+
+//text
+$card-title-font-size: 12px;
+$card-cost-font-size: 25px;
+$app-font-family: "Lato", sans-serif;
+
+.card_set {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin-top: 5%;
+
+  &__card {
+    border: 2px solid $app-gray;
+    width: 120px;
+    height: 110px;
+    padding-top: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    padding-left: 20px;
+    border-radius: 10px;
+    &__active {
+      border: 2px solid $app-green;
+      border-radius: 10px;
+      width: 120px;
+      height: 110px;
+      padding-top: 10px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: left;
+      padding-left: 20px;
+    }
+    &__title {
+      font-size: $card-title-font-size;
+      font-family: $app-font-family;
+      margin-bottom: 0px;
+    }
+    &__cost {
+      font-size: $card-title-font-size;
+      font-family: $app-font-family;
+      margin-bottom: 0px;
+      b {
+        font-size: $card-cost-font-size;
+        font-family: $app-font-family;
+      }
+    }
+    &__label {
+      font-size: $card-title-font-size;
+      font-family: $app-font-family;
+    }
+  }
+}

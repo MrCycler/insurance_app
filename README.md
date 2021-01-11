@@ -22,6 +22,8 @@ https://medium.com/@andrew_barnes/bem-and-sass-a-perfect-match-5e48d9bc3894
 - A version with Ant Design (https://ant.design/)
 - Change color of input checkboxes to #83cc5e
 - Date Input's placeholder should be "Fecha de Nacimiento"
+- Implement Modals to confirm sensible actions
+- application colors&sizes should be stay in a unique file
 
 ## Deploy
 - temp deploy web:
