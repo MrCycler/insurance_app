@@ -1,3 +1,6 @@
+$app-skyblue: #2f80ed;
+$step-indication-font-size: 12px;
+
 .layout {
   &__principal {
     display: grid;
@@ -18,5 +21,36 @@
       display: grid;
       grid-template-columns: repeat(2, 1fr);
     }
+  }
+}
+
+.step_indicator {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  &__button {
+    color: $app-skyblue;
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+    border: 1px $app-skyblue solid;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 8px;
+    margin-right: 10px;
+  }
+
+  &__label {
+    b {
+      color: $app-skyblue;
+      font-size: $step-indication-font-size;
+      margin-top: 20px;
+    }
+    font-size: $step-indication-font-size;
+    margin-top: 20px;
   }
 }

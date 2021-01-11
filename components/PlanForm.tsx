@@ -8,6 +8,7 @@ import { useRouter } from "next/router";
 import { Button } from "./Button.tsx";
 import { PlanCardSet } from "./PlanCardSet.tsx";
 import { PlanBanner } from "./PlanBanner.tsx";
+import { StepIndicator } from "./layout/StepIndicator.tsx";
 
 export const PlanForm = (props) => {
   //use router
@@ -41,6 +42,7 @@ export const PlanForm = (props) => {
 
   return (
     <div className="form">
+      <StepIndicator step={2} back={router.back}/>
       <div className="form__title">
         <p>Elige &nbsp;</p>
         <p className="form__title__active">tu protección</p>

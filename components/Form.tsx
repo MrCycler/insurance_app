@@ -10,6 +10,7 @@ import { Input } from "./Input.tsx";
 import { DateInput } from "./DateInput.tsx";
 import { IDInput } from "./IDInput.tsx";
 import { Button } from "./Button.tsx";
+import { StepIndicator } from "./layout/StepIndicator.tsx";
 import { RadioButtonGroup } from "./RadioButtonGroup.tsx";
 
 //Basic provider
@@ -73,6 +74,7 @@ export const Form = (props) => {
 
   return (
     <div className="form">
+    <StepIndicator step={1} back={router.back}/>
       <div className="form__title">
         <p>Hola,&nbsp;</p>
         <p className="form__title__active">{name}</p>
