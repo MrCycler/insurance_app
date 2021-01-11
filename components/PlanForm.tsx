@@ -56,6 +56,11 @@ export const PlanForm = (props) => {
         setValue={setPlanSelected}
       />
       <PlanBanner plan={plans[planselected]} />
+      <p className="form__indication">
+        Revisa nuestros
+        <br />
+        <b>servicios y exclusiones</b>
+      </p>
       <Button msg="COMPRAR PLAN" active={true} onClick={handleClick} />
     </div>
   );

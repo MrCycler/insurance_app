@@ -12,6 +12,7 @@ $form-subtitle-font-size: 20px;
 $button-font-size: 13px;
 $policy-font-size: 12px;
 $radio-button-font-size: 14px;
+$indication-font-size: 20px;
 $app-font-family: "Lato", sans-serif;
 
 .form {
@@ -37,6 +38,17 @@ $app-font-family: "Lato", sans-serif;
     font-size: $form-subtitle-font-size;
     font-family: $app-font-family;
     margin-bottom: 2%;
+  }
+
+  &__indication {
+    margin-top: 40px;
+    font-family: $app-font-family;
+    font-size: $indication-font-size;
+    b {
+      font-size: $indication-font-size;
+      font-family: $app-font-family;
+      color: $app-skyblue;
+    }
   }
 }
 
@@ -155,10 +167,10 @@ $app-font-family: "Lato", sans-serif;
   }
 }
 
-.radio_button_group{
+.radio_button_group {
   font-size: $radio-button-font-size;
   font-family: $app-font-family;
-  width:80%;
+  width: 80%;
 }
 
 .button {
@@ -169,7 +181,7 @@ $app-font-family: "Lato", sans-serif;
   padding-top: 15px;
   padding-bottom: 15px;
   padding-right: 30px;
-  padding-left:30px;
+  padding-left: 30px;
   border: $app-skyblue 1px solid;
   border-radius: 5px;
   font-size: $button-font-size;
@@ -184,7 +196,7 @@ $app-font-family: "Lato", sans-serif;
     padding-top: 15px;
     padding-bottom: 15px;
     padding-right: 30px;
-    padding-left:30px;
+    padding-left: 30px;
     border: $app-skyblue 1px solid;
     border-radius: 5px;
     font-size: $button-font-size;
@@ -193,4 +205,3 @@ $app-font-family: "Lato", sans-serif;
     cursor: pointer;
   }
 }
-
