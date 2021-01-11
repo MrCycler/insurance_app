@@ -126,5 +126,16 @@ $app-font-family: "Lato", sans-serif;
   &__benefits {
     border-top: 1px $app-gray solid;
     grid-column: 1 / 4;
+    padding-left:20px;
+    padding-top: 20px;
+  
+    &__deactive{
+        color: $app-gray;
+    text-decoration:line-through;
+    }
+    p{
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
   }
 }

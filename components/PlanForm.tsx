@@ -13,8 +13,8 @@ export const PlanForm = (props) => {
   //use router
   const router = useRouter();
 
-  const [plans, setPlans] = useState([]);
-  const [planselected, setPlanSelected] = useState("");
+  const [plans, setPlans] = useState([{max_cover:"",name:"",benefits_num:0}]);
+  const [planselected, setPlanSelected] = useState(0);
 
   //Verifica la consistencia de los datos
   const [active, setActive] = useState(false);
