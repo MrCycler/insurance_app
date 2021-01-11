@@ -1,18 +1,17 @@
 //reacstrap style
-@import '../node_modules/bootstrap/scss/bootstrap';
+@import "../node_modules/bootstrap/scss/bootstrap";
 
 //base style of app
-@import 'base/base';
+@import "base/base";
 
 //layout style
-@import 'layout/header';
-@import 'layout/layout';
+@import "layout/header";
+@import "layout/layout";
 
 //form style
-@import 'form/form';
+@import "form/form";
 //plan form style
-@import 'plan/plan';
-
+@import "plan/plan";
 
 //success screen style
-@import 'success/success';
+@import "success/success";

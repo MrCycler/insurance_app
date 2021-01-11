@@ -1,4 +1,4 @@
-import config from './config.json';
+import config from "./config.json";
 
 /*Expose serverUrl as a variable*/
 const { serverUrl } = config;

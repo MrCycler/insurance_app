@@ -9,7 +9,15 @@ export const RadioButtonGroup = (props) => {
         {props.options.map((option, i) => (
           <FormGroup check key={i}>
             <Label check>
-              <Input type="radio" name={"radio2"+props.title}  value={i} onChange={(e)=>{props.setValue(e.target.value);} }/> {option}
+              <Input
+                type="radio"
+                name={"radio2" + props.title}
+                value={i}
+                onChange={(e) => {
+                  props.setValue(e.target.value);
+                }}
+              />{" "}
+              {option}
             </Label>
           </FormGroup>
         ))}

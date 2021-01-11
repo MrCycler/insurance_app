@@ -1,6 +1,6 @@
-import { baseProvider } from './baseProvider.tsx';
+import { baseProvider } from "./baseProvider.tsx";
 
 const postClient = async (body) =>
-  baseProvider.httpPost('/dummy/obtenerdatospersona', body);
+  baseProvider.httpPost("/dummy/obtenerdatospersona", body);
 
 export { postClient };

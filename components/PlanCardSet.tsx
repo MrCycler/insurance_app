@@ -6,7 +6,7 @@ const PlanCard = (props) => {
     <div
       className={props.active ? "card_set__card__active" : "card_set__card"}
       key={props.id}
-      onClick={()=>props.onClick(props.id)}
+      onClick={() => props.onClick(props.id)}
     >
       {props.active ? (
         <img src="/images/gl_correct.png" className="card_set__card__icon" />
@@ -29,7 +29,13 @@ export const PlanCardSet = (props) => {
   return (
     <div className="card_set">
       {props.plans.map((plan, i) => (
-        <PlanCard id={i} name={plan.name} cost={plan.cost} active={props.value===plan.id} onClick={props.setValue}/>
+        <PlanCard
+          id={i}
+          name={plan.name}
+          cost={plan.cost}
+          active={props.value === plan.id}
+          onClick={props.setValue}
+        />
       ))}
     </div>
   );

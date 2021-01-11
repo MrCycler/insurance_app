@@ -28,15 +28,15 @@ export const BasicForm = (props) => {
     if (
       documentNro.length == 8 &&
       phoneNumber.length == 9 &&
-      date.match(/^(\d{4})-(\d{2})-(\d{2})$/)&&
-      personalPolicy&&
+      date.match(/^(\d{4})-(\d{2})-(\d{2})$/) &&
+      personalPolicy &&
       comPolicy
     ) {
       setActive(true);
     } else {
       setActive(false);
     }
-  }, [documentType, documentNro, date, phoneNumber,personalPolicy,comPolicy]);
+  }, [documentType, documentNro, date, phoneNumber, personalPolicy, comPolicy]);
 
   const handleClick = (e) => {
     e.preventDefault();
@@ -66,10 +66,7 @@ export const BasicForm = (props) => {
         maxLength="9"
       />
       <DateInput value={date} setValue={setDate} />
-      <PolicyCheck
-        checked={personalPolicy}
-        onClick={setPersonalPolicy}
-      >
+      <PolicyCheck checked={personalPolicy} onClick={setPersonalPolicy}>
         Acepto la Politica de Protección de Datos Personales y los Términos y
         Condiciones
       </PolicyCheck>

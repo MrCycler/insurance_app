@@ -54,18 +54,26 @@ export const Form = (props) => {
   useEffect(() => {
     if (
       documentNro.length == 8 &&
-      date.match(/^(\d{4})-(\d{2})-(\d{2})$/)&&
-     name!==""&&
-    lastName!==""&&
-    motherLastName!==""&&
-    gender!==""&&
-    beneficiaries!==""
+      date.match(/^(\d{4})-(\d{2})-(\d{2})$/) &&
+      name !== "" &&
+      lastName !== "" &&
+      motherLastName !== "" &&
+      gender !== "" &&
+      beneficiaries !== ""
     ) {
       setActive(true);
     } else {
       setActive(false);
     }
-  }, [documentNro, date, name,lastName,motherLastName,gender,beneficiaries]);
+  }, [
+    documentNro,
+    date,
+    name,
+    lastName,
+    motherLastName,
+    gender,
+    beneficiaries,
+  ]);
 
   const handleClick = (e) => {
     e.preventDefault();
@@ -74,7 +82,7 @@ export const Form = (props) => {
 
   return (
     <div className="form">
-    <StepIndicator step={1} back={router.back}/>
+      <StepIndicator step={1} back={router.back} />
       <div className="form__title">
         <p>Hola,&nbsp;</p>
         <p className="form__title__active">{name}</p>
@@ -102,7 +110,12 @@ export const Form = (props) => {
         setValue={setMotherLastName}
       />
       <DateInput value={date} setValue={setDate} />
-      <RadioButtonGroup title="Género" options={["Masculino", "Femenino"]} value={gender}   setValue={setGender}/>
+      <RadioButtonGroup
+        title="Género"
+        options={["Masculino", "Femenino"]}
+        value={gender}
+        setValue={setGender}
+      />
       <RadioButtonGroup
         title="¿A quién vamos a asegurar?"
         options={["Solo a mí", "A mí y a mi familia"]}
