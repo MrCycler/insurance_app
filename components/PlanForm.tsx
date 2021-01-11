@@ -22,11 +22,12 @@ export const PlanForm = (props) => {
   useEffect(() => {
     const initialize = async () => {
       setPlans([
-        { name: "BÁSICO", cost: 160, max_cover: 1, benefits_num: 2 },
-        { name: "AVANZADO", cost: 200, max_cover: 5, benefits_num: 4 },
-        { name: "PREMIUM", cost: 250, max_cover: 8, benefits_num: 6 },
-        { name: "FULL", cost: 500, max_cover: 10, benefits_num: 6 },
+        { id:0, name: "BÁSICO", cost: 160, max_cover: 1, benefits_num: 2 },
+        { id:1, name: "AVANZADO", cost: 200, max_cover: 5, benefits_num: 4 },
+        { id:2, name: "PREMIUM", cost: 250, max_cover: 8, benefits_num: 6 },
+        { id:3, name: "FULL", cost: 500, max_cover: 10, benefits_num: 6 },
       ]);
+      setPlanSelected(0);
     };
 
     initialize();
@@ -44,7 +45,7 @@ export const PlanForm = (props) => {
         <p className="form__title__active">tu protección</p>
       </div>
       <p className="form__subtitle">Selecciona tu plan de salud ideal</p>
-      <PlanCardSet plans={plans}/>
+      <PlanCardSet plans={plans} value={planselected} setValue={setPlanSelected}/>
       <Button msg="COMPRAR PLAN" active={true} onClick={handleClick} />
     </div>
   );
