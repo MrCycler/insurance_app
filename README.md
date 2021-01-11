@@ -18,6 +18,11 @@ https://medium.com/@andrew_barnes/bem-and-sass-a-perfect-match-5e48d9bc3894
 - Run in production (for the moment only heroku compatibility)
 `npm run start`
 
+# TODO Features ( I Apply SCRUM. So I prioritize functionality over aesthetics followed 80/20 law)
+- A version with Ant Design (https://ant.design/)
+- Change color of input checkboxes to #83cc5e
+- Date Input's placeholder should be "Fecha de Nacimiento"
+
 ## Deploy
 - temp deploy web:
 https://cotizacion-seguro.herokuapp.com/

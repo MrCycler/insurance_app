@@ -11,6 +11,7 @@ $form-title-font-size: 30px;
 $form-subtitle-font-size: 20px;
 $button-font-size: 13px;
 $policy-font-size: 12px;
+$radio-button-font-size: 14px;
 $app-font-family: "Lato", sans-serif;
 
 .form {
@@ -36,70 +37,6 @@ $app-font-family: "Lato", sans-serif;
     font-size: $form-subtitle-font-size;
     font-family: $app-font-family;
     margin-bottom: 2%;
-  }
-}
-
-.button {
-  background-color: $app-skyblue;
-  color: $app-gray;
-  width: fit-content;
-  margin-top: 20%;
-  padding-top: 3%;
-  padding-bottom: 3%;
-  padding-right: 5%;
-  padding-left: 5%;
-  border: $app-skyblue 1px solid;
-  border-radius: 5px;
-  font-size: $button-font-size;
-  font-family: $app-font-family;
-  font-weight: bold;
-  cursor: pointer;
-  &__active {
-    background-color: $app-skyblue;
-    color: $app-white;
-    width: fit-content;
-    margin-top: 20%;
-    padding-top: 3%;
-    padding-bottom: 3%;
-    padding-right: 5%;
-    padding-left: 5%;
-    border: $app-skyblue 1px solid;
-    border-radius: 5px;
-    font-size: $button-font-size;
-    font-family: $app-font-family;
-    font-weight: bold;
-    cursor: pointer;
-  }
-}
-
-.date {
-  position: relative;
-  &__input {
-    height: 56px;
-    width: 80%;
-    position: relative;
-    margin-top: 20px;
-    outline: 0;
-    padding: 14px 16px 0 10px;
-
-    &:focus {
-      border-color: white;
-      box-shadow: 1px 1px 1px #ddd inset, 1px 1px 1px #ddd;
-      padding: 14px 16px 0 10px;
-    }
-  }
-
-  &__label {
-    font-size: 16px;
-    font-family: Arial, Helvetica, sans-serif;
-    padding: 0 12px;
-    color: #999;
-    pointer-events: none;
-    position: absolute;
-    top: 14px;
-    transform-origin: top left;
-    transition: all 0.2s ease-out;
-    transform: translate(0, 12px) scale(0.75);
   }
 }
 
@@ -174,6 +111,37 @@ $app-font-family: "Lato", sans-serif;
   }
 }
 
+.date {
+  position: relative;
+  &__input {
+    height: 56px;
+    width: 80%;
+    position: relative;
+    margin-top: 20px;
+    outline: 0;
+    padding: 14px 16px 0 10px;
+
+    &:focus {
+      border-color: white;
+      box-shadow: 1px 1px 1px #ddd inset, 1px 1px 1px #ddd;
+      padding: 14px 16px 0 10px;
+    }
+  }
+
+  &__label {
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0 12px;
+    color: #999;
+    pointer-events: none;
+    position: absolute;
+    top: 14px;
+    transform-origin: top left;
+    transition: all 0.2s ease-out;
+    transform: translate(0, 12px) scale(0.75);
+  }
+}
+
 .policy {
   display: flex;
   margin-top: 5%;
@@ -186,3 +154,43 @@ $app-font-family: "Lato", sans-serif;
     font-family: $app-font-family;
   }
 }
+
+.radio_button_group{
+  font-size: $radio-button-font-size;
+  font-family: $app-font-family;
+  width:80%;
+}
+
+.button {
+  background-color: $app-skyblue;
+  color: $app-gray;
+  width: fit-content;
+  margin-top: 20%;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-right: 30px;
+  padding-left:30px;
+  border: $app-skyblue 1px solid;
+  border-radius: 5px;
+  font-size: $button-font-size;
+  font-family: $app-font-family;
+  font-weight: bold;
+  cursor: pointer;
+  &__active {
+    background-color: $app-skyblue;
+    color: $app-white;
+    width: fit-content;
+    margin-top: 20%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-right: 30px;
+    padding-left:30px;
+    border: $app-skyblue 1px solid;
+    border-radius: 5px;
+    font-size: $button-font-size;
+    font-family: $app-font-family;
+    font-weight: bold;
+    cursor: pointer;
+  }
+}
+
