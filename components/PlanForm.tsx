@@ -7,6 +7,7 @@ import { useRouter } from "next/router";
 //Form components
 import { Button } from "./Button.tsx";
 import { PlanCardSet } from "./PlanCardSet.tsx";
+import { PlanBanner } from "./PlanBanner.tsx";
 
 export const PlanForm = (props) => {
   //use router
@@ -46,6 +47,7 @@ export const PlanForm = (props) => {
       </div>
       <p className="form__subtitle">Selecciona tu plan de salud ideal</p>
       <PlanCardSet plans={plans} value={planselected} setValue={setPlanSelected}/>
+      <PlanBanner plan={plans[planselected]}/>
       <Button msg="COMPRAR PLAN" active={true} onClick={handleClick} />
     </div>
   );

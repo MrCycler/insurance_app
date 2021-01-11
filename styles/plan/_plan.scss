@@ -7,6 +7,8 @@ $app-gray: #dddd;
 //text
 $card-title-font-size: 12px;
 $card-cost-font-size: 25px;
+$card-cover-font-size: 30px;
+$tag-font-size: 12px;
 $app-font-family: "Lato", sans-serif;
 
 .card_set {
@@ -63,5 +65,66 @@ $app-font-family: "Lato", sans-serif;
       align-self: flex-end;
       margin-right: 5%;
     }
+  }
+}
+
+.plan_banner {
+  margin-top: 50px;
+  margin-right: 10%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  border-radius: 10px 10px 10px 10px;
+  border: solid 1px $app-gray;
+  &__title {
+    background-color: $app-gray;
+    grid-column: 1 / 4;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-family: $app-font-family;
+    border-radius: 10px 10px 0 0;
+  }
+  &__cover {
+    grid-column: 1 / 3;
+    padding-left: 20px;
+    padding-top: 20px;
+    font-family: $app-font-family;
+
+    b {
+      font-size: $card-cover-font-size;
+      font-family: $app-font-family;
+    }
+    p {
+      margin-bottom: 0rem !important;
+    }
+    div {
+      border-radius: 10px 10px 10px 10px;
+      background-color: $app-green;
+      width: fit-content;
+      margin-top: 10px;
+      font-family: $app-font-family;
+      font-size: $tag-font-size;
+      color: white;
+      padding-top: 2px;
+      padding-bottom: 2px;
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+  }
+  &__img {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-left: 1px $app-gray solid;
+    img {
+      width: 100px;
+      height: 100px;
+    }
+  }
+  &__benefits {
+    border-top: 1px $app-gray solid;
+    grid-column: 1 / 4;
   }
 }
